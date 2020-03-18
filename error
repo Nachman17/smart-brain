@@ -1,0 +1,122 @@
+PS C:\Udemy\GitHub Projects\smart-brain> heroku logs --tail
+ »   Warning: heroku update available from 7.38.2 to 7.39.0.
+2020-03-14T21:45:35.751278+00:00 app[api]: Release v1 created by user nachmanmusic@gmail.com
+2020-03-14T21:45:35.751278+00:00 app[api]: Initial release by user nachmanmusic@gmail.com  
+2020-03-14T21:45:35.938743+00:00 app[api]: Enable Logplex by user nachmanmusic@gmail.com   
+2020-03-14T21:45:35.938743+00:00 app[api]: Release v2 created by user nachmanmusic@gmail.com
+2020-03-14T21:48:15.000000+00:00 app[api]: Build started by user nachmanmusic@gmail.com    
+2020-03-14T21:49:47.820981+00:00 app[api]: Release v3 created by user nachmanmusic@gmail.com
+2020-03-14T21:49:47.820981+00:00 app[api]: Deploy 27a144d0 by user nachmanmusic@gmail.com  
+2020-03-14T21:49:47.835742+00:00 app[api]: Scaled to web@1:Free by user nachmanmusic@gmail.com
+2020-03-14T21:49:54.885977+00:00 heroku[web.1]: Starting process with command `npm start`  
+2020-03-14T21:49:54.000000+00:00 app[api]: Build succeeded
+2020-03-14T21:49:57.206436+00:00 app[web.1]: 
+2020-03-14T21:49:57.206460+00:00 app[web.1]: > facerecognitionbrain@0.1.0 start /app
+2020-03-14T21:49:57.206461+00:00 app[web.1]: > react-scripts start
+2020-03-14T21:49:57.206461+00:00 app[web.1]:
+2020-03-14T21:49:59.111905+00:00 app[web.1]: ℹ ｢wds｣: Project is running at http://172.18.152.6/
+2020-03-14T21:49:59.112260+00:00 app[web.1]: ℹ ｢wds｣: webpack output is served from /      
+2020-03-14T21:49:59.112335+00:00 app[web.1]: ℹ ｢wds｣: Content not from webpack is served from /app/public
+2020-03-14T21:49:59.112402+00:00 app[web.1]: ℹ ｢wds｣: 404s will fallback to /index.html    
+2020-03-14T21:49:59.112571+00:00 app[web.1]: Starting the development server...
+2020-03-14T21:49:59.112572+00:00 app[web.1]:
+2020-03-14T21:49:59.567775+00:00 heroku[web.1]: State changed from starting to up
+2020-03-14T21:50:11.251156+00:00 app[web.1]: Compiled successfully!
+2020-03-14T21:50:11.251720+00:00 app[web.1]:
+2020-03-14T21:50:11.251797+00:00 app[web.1]: You can now view facerecognitionbrain in the browser.
+2020-03-14T21:50:11.251849+00:00 app[web.1]:
+2020-03-14T21:50:11.251931+00:00 app[web.1]: Local:            http://localhost:42837/     
+2020-03-14T21:50:11.251991+00:00 app[web.1]: On Your Network:  http://172.18.152.6:42837/
+2020-03-14T21:50:11.252051+00:00 app[web.1]:
+2020-03-14T21:50:11.252124+00:00 app[web.1]: Note that the development build is not optimized.
+2020-03-14T21:50:11.252175+00:00 app[web.1]: To create a production build, use npm run build.
+2020-03-14T21:50:11.252218+00:00 app[web.1]:
+2020-03-14T21:50:47.857866+00:00 heroku[router]: at=info method=GET path="/" host=smart-brain-nga.herokuapp.com request_id=14658373-e9da-4e59-b860-012eb75a50de fwd="89.139.245.238" dyno=web.1 connect=1ms service=20ms status=200 bytes=1123 protocol=https
+2020-03-14T21:50:48.277483+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js" host=smart-brain-nga.herokuapp.com request_id=3f94b671-83b8-49d5-8224-f9a82feb1794 fwd="89.139.245.238" dyno=web.1 connect=0ms service=104ms status=200 bytes=441107 protocol=https
+2020-03-14T21:50:48.164812+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js" host=smart-brain-nga.herokuapp.com request_id=b1648cb6-a0cd-4981-b27d-def368626e2e fwd="89.139.245.238" dyno=web.1 connect=0ms service=5ms status=200 bytes=6711 protocol=https  
+2020-03-14T21:50:48.362435+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js" host=smart-brain-nga.herokuapp.com request_id=b189d8ae-94bb-414e-9318-b68791b10c1a fwd="89.139.245.238" dyno=web.1 connect=0ms service=4ms status=200 bytes=11738 protocol=https
+2020-03-14T21:50:50.623018+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=smart-brain-nga.herokuapp.com request_id=d8c35f92-5f8f-412f-a475-a8aac85ca3c3 fwd="89.139.245.238" dyno=web.1 connect=18ms service=33ms status=200 bytes=3808 protocol=https        
+2020-03-14T21:50:51.141418+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=smart-brain-nga.herokuapp.com request_id=d5712669-b6a3-419e-8081-30fc1b8507ee fwd="89.139.245.238" dyno=web.1 connect=1ms service=3ms status=200 bytes=635 protocol=https
+2020-03-14T21:51:45.403719+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/sockjs-node" host=smart-brain-nga.herokuapp.com request_id=3810beff-375c-4542-a4d4-a47b155a0c4a fwd="89.139.245.238" dyno=web.1 connect=1ms service=55006ms status=503 bytes= protocol=https
+2020-03-14T21:52:12.419406+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js.map" host=smart-brain-nga.herokuapp.com request_id=83890290-e5b8-4ad7-b479-0f5c4b7c7bf8 fwd="89.139.245.238" dyno=web.1 connect=0ms service=4ms status=200 bytes=6730 protocol=https
+2020-03-14T21:52:12.493177+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js.map" host=smart-brain-nga.herokuapp.com request_id=26fb0f5e-d9ef-4482-8a1c-3a8a4ff93550 fwd="89.139.245.238" dyno=web.1 connect=0ms service=4ms status=200 bytes=11125 protocol=https
+2020-03-14T21:52:12.542255+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js.map" host=smart-brain-nga.herokuapp.com request_id=00dd8cc9-9414-41f5-896c-6b29586146f4 fwd="89.139.245.238" dyno=web.1 connect=1ms service=111ms status=200 bytes=444162 protocol=https
+2020-03-14T21:56:20.699707+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js.map" host=smart-brain-nga.herokuapp.com request_id=b9146904-3fe0-4f5d-84b7-bd6310cb383f fwd="89.139.245.238" dyno=web.1 connect=1ms service=5ms status=304 bytes=174 protocol=https
+2020-03-14T21:56:20.750469+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js.map" host=smart-brain-nga.herokuapp.com request_id=dc3d7284-279e-4d7e-83d2-6df2b6a4b209 fwd="89.139.245.238" dyno=web.1 connect=0ms service=5ms status=304 bytes=176 protocol=https
+2020-03-14T21:56:20.785720+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js.map" host=smart-brain-nga.herokuapp.com request_id=160d4beb-1f2a-4c30-add5-419f9528b289 fwd="89.139.245.238" dyno=web.1 connect=0ms service=1ms status=304 bytes=174 protocol=https
+2020-03-14T21:57:09.004208+00:00 heroku[router]: at=info method=GET path="/" host=smart-brain-nga.herokuapp.com request_id=23a6a12f-a25c-4ebb-b1ee-aca20c00de1e fwd="89.139.245.238" dyno=web.1 connect=0ms service=2ms status=304 bytes=173 protocol=https
+2020-03-14T21:57:09.310597+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js" host=smart-brain-nga.herokuapp.com request_id=21cf9209-1aad-45dd-84f7-ffae0031e80d fwd="89.139.245.238" dyno=web.1 connect=1ms service=2ms status=304 bytes=174 protocol=https
+2020-03-14T21:57:09.322401+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js" host=smart-brain-nga.herokuapp.com request_id=8807ba8b-a518-477d-bbaf-50ff0122b0e9 fwd="89.139.245.238" dyno=web.1 connect=0ms service=1ms status=304 bytes=174 protocol=https
+2020-03-14T21:57:09.326114+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js" host=smart-brain-nga.herokuapp.com request_id=e4b4886a-5f47-4987-a996-3b33acc27cbc fwd="89.139.245.238" dyno=web.1 connect=0ms service=5ms status=304 bytes=176 protocol=https
+smart-brain-nga.herokuapp.com request_id=f086c8b7-846e-4ad9-9902-79d09881e342 fwd="89.139.245.238" dyno=web.1 connect=0ms service=2ms status=304 bytes=174 protocol=https
+2020-03-14T21:57:09.806541+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js.map" host=smart-brain-nga.herokuapp.com request_id=5183ba25-385d-4a4d-9373-ce2f0894a635 fwd="89.139.245.238" dyno=web.1 connect=0ms service=5ms status=304 bytes=174 protocol=https
+2020-03-14T21:57:09.805942+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js.map" host=smart-brain-nga.herokuapp.com request_id=21b3def5-3299-4c3b-b40c-89958cf0d1f7 fwd="89.139.245.238" dyno=web.1 connect=0ms service=5ms status=304 bytes=176 protocol=https
+2020-03-14T21:57:10.259206+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=smart-brain-nga.herokuapp.com request_id=19a180da-25fa-4840-ba3e-b722a8ecb9ed fwd="89.139.245.238" dyno=web.1 connect=0ms service=6ms status=200 bytes=3808 protocol=https
+2020-03-14T21:57:10.813663+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=smart-brain-nga.herokuapp.com request_id=4e211783-fdb4-4aae-a297-b14790dda330 fwd="89.139.245.238" dyno=web.1 connect=0ms service=2ms status=304 bytes=237 protocol=https
+2020-03-14T21:58:05.144411+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/sockjs-node" host=smart-brain-nga.herokuapp.com request_id=a64002e7-a745-4741-979b-e4fe7a207de7 fwd="89.139.245.238" dyno=web.1 connect=0ms service=55004ms status=503 bytes= protocol=https
+^CTerminate batch job (Y/N)? y
+PS C:\Udemy\GitHub Projects\smart-brain> heroku logs --tail
+ »   Warning: heroku update available from 7.38.2 to 7.39.0.
+2020-03-14T21:45:35.751278+00:00 app[api]: Release v1 created by user nachmanmusic@gmail.com
+2020-03-14T21:45:35.751278+00:00 app[api]: Initial release by user nachmanmusic@gmail.com
+2020-03-14T21:45:35.938743+00:00 app[api]: Enable Logplex by user nachmanmusic@gmail.com
+2020-03-14T21:45:35.938743+00:00 app[api]: Release v2 created by user nachmanmusic@gmail.com
+2020-03-14T21:48:15.000000+00:00 app[api]: Build started by user nachmanmusic@gmail.com
+2020-03-14T21:49:47.820981+00:00 app[api]: Release v3 created by user nachmanmusic@gmail.com
+2020-03-14T21:49:47.820981+00:00 app[api]: Deploy 27a144d0 by user nachmanmusic@gmail.com
+2020-03-14T21:49:47.835742+00:00 app[api]: Scaled to web@1:Free by user nachmanmusic@gmail.com
+2020-03-14T21:49:54.885977+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-03-14T21:49:54.000000+00:00 app[api]: Build succeeded
+2020-03-14T21:49:57.206436+00:00 app[web.1]:
+2020-03-14T21:49:57.206460+00:00 app[web.1]: > facerecognitionbrain@0.1.0 start /app
+2020-03-14T21:49:57.206461+00:00 app[web.1]: > react-scripts start
+2020-03-14T21:49:57.206461+00:00 app[web.1]:
+2020-03-14T21:49:59.111905+00:00 app[web.1]: ℹ ｢wds｣: Project is running at http://172.18.152.6/
+2020-03-14T21:49:59.112260+00:00 app[web.1]: ℹ ｢wds｣: webpack output is served from /
+2020-03-14T21:49:59.112335+00:00 app[web.1]: ℹ ｢wds｣: Content not from webpack is served from /app/public2020-03-14T21:49:59.112402+00:00 app[web.1]: ℹ ｢wds｣: 404s will fallback to /index.html
+2020-03-14T21:49:59.112571+00:00 app[web.1]: Starting the development server...
+2020-03-14T21:49:59.112572+00:00 app[web.1]: 
+2020-03-14T21:49:59.567775+00:00 heroku[web.1]: State changed from starting to up
+2020-03-14T21:50:11.251156+00:00 app[web.1]: Compiled successfully!
+2020-03-14T21:50:11.251720+00:00 app[web.1]:
+2020-03-14T21:50:11.251797+00:00 app[web.1]: You can now view facerecognitionbrain in the browser.       
+2020-03-14T21:50:11.251849+00:00 app[web.1]:
+2020-03-14T21:50:11.251931+00:00 app[web.1]: Local:            http://localhost:42837/
+2020-03-14T21:50:11.251991+00:00 app[web.1]: On Your Network:  http://172.18.152.6:42837/
+2020-03-14T21:50:11.252051+00:00 app[web.1]:
+2020-03-14T21:50:11.252124+00:00 app[web.1]: Note that the development build is not optimized.
+2020-03-14T21:50:11.252175+00:00 app[web.1]: To create a production build, use npm run build.
+2020-03-14T21:50:11.252218+00:00 app[web.1]:
+2020-03-14T21:50:47.857866+00:00 heroku[router]: at=info method=GET path="/" host=smart-brain-nga.herokuapp.com request_id=14658373-e9da-4e59-b860-012eb75a50de fwd="89.139.245.238" dyno=web.1 connect=1ms service=20ms status=200 bytes=1123 protocol=https
+2020-03-14T21:50:48.277483+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js" host=smart-brain-nga.herokuapp.com request_id=3f94b671-83b8-49d5-8224-f9a82feb1794 fwd="89.139.245.238" dyno=web.1 connect=0ms service=104ms status=200 bytes=441107 protocol=https
+2020-03-14T21:50:48.164812+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js" host=smart-brain-nga.herokuapp.com request_id=b1648cb6-a0cd-4981-b27d-def368626e2e fwd="89.139.245.238" dyno=web.1 connect=0ms service=5ms status=200 bytes=6711 protocol=https
+2020-03-14T21:50:48.362435+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js" host=smart-brain-nga.herokuapp.com request_id=b189d8ae-94bb-414e-9318-b68791b10c1a fwd="89.139.245.238" dyno=web.1 connect=0ms service=4ms status=200 bytes=11738 protocol=https
+2020-03-14T21:50:50.623018+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=smart-brain-nga.herokuapp.com request_id=d8c35f92-5f8f-412f-a475-a8aac85ca3c3 fwd="89.139.245.238" dyno=web.1 connect=18ms service=33ms status=200 bytes=3808 protocol=https
+2020-03-14T21:50:51.141418+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=smart-brain-nga.herokuapp.com request_id=d5712669-b6a3-419e-8081-30fc1b8507ee fwd="89.139.245.238" dyno=web.1 connect=1ms service=3ms status=200 bytes=635 protocol=https
+2020-03-14T21:51:45.403719+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/sockjs-node" host=smart-brain-nga.herokuapp.com request_id=3810beff-375c-4542-a4d4-a47b155a0c4a fwd="89.139.245.238" dyno=web.1 connect=1ms service=55006ms status=503 bytes= protocol=https
+2020-03-14T21:52:12.419406+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js.map" host=smart-brain-nga.herokuapp.com request_id=83890290-e5b8-4ad7-b479-0f5c4b7c7bf8 fwd="89.139.245.238" dyno=web.1 connect=0ms service=4ms status=200 bytes=6730 protocol=https
+2020-03-14T21:52:12.493177+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js.map" host=smart-brain-nga.herokuapp.com request_id=26fb0f5e-d9ef-4482-8a1c-3a8a4ff93550 fwd="89.139.245.238" dyno=web.1 connect=0ms service=4ms status=200 bytes=11125 protocol=https
+2020-03-14T21:52:12.542255+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js.map" host=smart-brain-nga.herokuapp.com request_id=00dd8cc9-9414-41f5-896c-6b29586146f4 fwd="89.139.245.238" dyno=web.1 connect=1ms service=111ms status=200 bytes=444162 protocol=https
+2020-03-14T21:56:20.699707+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js.map" host=smart-brain-nga.herokuapp.com request_id=b9146904-3fe0-4f5d-84b7-bd6310cb383f fwd="89.139.245.238" dyno=web.1 connect=1ms service=5ms status=304 bytes=174 protocol=https
+2020-03-14T21:56:20.750469+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js.map" host=smart-brain-nga.herokuapp.com request_id=dc3d7284-279e-4d7e-83d2-6df2b6a4b209 fwd="89.139.245.238" dyno=web.1 connect=0ms service=5ms status=304 bytes=176 protocol=https
+2020-03-14T21:56:20.785720+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js.map" host=smart-brain-nga.herokuapp.com request_id=160d4beb-1f2a-4c30-add5-419f9528b289 fwd="89.139.245.238" dyno=web.1 connect=0ms service=1ms status=304 bytes=174 protocol=https
+2020-03-14T21:57:09.004208+00:00 heroku[router]: at=info method=GET path="/" host=smart-brain-nga.herokuapp.com request_id=23a6a12f-a25c-4ebb-b1ee-aca20c00de1e fwd="89.139.245.238" dyno=web.1 connect=0ms service=2ms status=304 bytes=173 protocol=https
+2020-03-14T21:57:09.310597+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js" host=smart-brain-nga.herokuapp.com request_id=21cf9209-1aad-45dd-84f7-ffae0031e80d fwd="89.139.245.238" dyno=web.1 connect=1ms service=2ms status=304 bytes=174 protocol=https
+2020-03-14T21:57:09.322401+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js" host=smart-brain-nga.herokuapp.com request_id=8807ba8b-a518-477d-bbaf-50ff0122b0e9 fwd="89.139.245.238" dyno=web.1 connect=0ms service=1ms status=304 bytes=174 protocol=https
+2020-03-14T21:57:09.326114+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js" host=smart-brain-nga.herokuapp.com request_id=e4b4886a-5f47-4987-a996-3b33acc27cbc fwd="89.139.245.238" dyno=web.1 connect=0ms service=5ms status=304 bytes=176 protocol=https
+2020-03-14T21:57:09.517607+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js.map" host=smart-brain-nga.herokuapp.com request_id=f086c8b7-846e-4ad9-9902-79d09881e342 fwd="89.139.245.238" dyno=web.1 connect=0ms service=2ms status=304 bytes=174 protocol=https
+2020-03-14T21:57:09.806541+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js.map" host=smart-brain-nga.herokuapp.com request_id=5183ba25-385d-4a4d-9373-ce2f0894a635 fwd="89.139.245.238" dyno=web.1 connect=0ms service=5ms status=304 bytes=174 protocol=https
+2020-03-14T21:57:09.805942+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js.map" host=smart-brain-nga.herokuapp.com request_id=21b3def5-3299-4c3b-b40c-89958cf0d1f7 fwd="89.139.245.238" dyno=web.1 connect=0ms service=5ms status=304 bytes=176 protocol=https
+2020-03-14T21:57:10.259206+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=smart-brain-nga.herokuapp.com request_id=19a180da-25fa-4840-ba3e-b722a8ecb9ed fwd="89.139.245.238" dyno=web.1 connect=0ms service=6ms status=200 bytes=3808 protocol=https
+2020-03-14T21:57:10.813663+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=smart-brain-nga.herokuapp.com request_id=4e211783-fdb4-4aae-a297-b14790dda330 fwd="89.139.245.238" dyno=web.1 connect=0ms service=2ms status=304 bytes=237 protocol=https
+2020-03-14T21:58:05.144411+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/sockjs-node" host=smart-brain-nga.herokuapp.com request_id=a64002e7-a745-4741-979b-e4fe7a207de7 fwd="89.139.245.238" dyno=web.1 connect=0ms service=55004ms status=503 bytes= protocol=https
+2020-03-14T22:05:18.614399+00:00 heroku[router]: at=info method=GET path="/" host=smart-brain-nga.herokuapp.com request_id=66189d86-7e21-4690-bb53-b7ca4ccc5bb3 fwd="89.139.245.238" dyno=web.1 connect=0ms service=1ms status=304 bytes=173 protocol=https
+2020-03-14T22:05:18.955040+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js" host=smart-brain-nga.herokuapp.com request_id=bf982e25-d238-40cd-b464-1d8febe1266c fwd="89.139.245.238" dyno=web.1 connect=1ms service=5ms status=304 bytes=176 protocol=https
+2020-03-14T22:05:18.948958+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js" host=smart-brain-nga.herokuapp.com request_id=5cfa9ff5-90b5-4299-9ad4-a6e1e6d14c50 fwd="89.139.245.238" dyno=web.1 connect=0ms service=1ms status=304 bytes=174 protocol=https
+2020-03-14T22:05:18.962108+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js" host=smart-brain-nga.herokuapp.com request_id=2d76e3f6-e833-452e-ad15-641cd428ca04 fwd="89.139.245.238" dyno=web.1 connect=0ms service=1ms status=304 bytes=174 protocol=https
+2020-03-14T22:05:19.166637+00:00 heroku[router]: at=info method=GET path="/static/js/bundle.js.map" host=smart-brain-nga.herokuapp.com request_id=c5871578-ac7a-4238-977b-e97de7c6461c fwd="89.139.245.238" dyno=web.1 connect=1ms service=2ms status=304 bytes=174 protocol=https
+2020-03-14T22:05:19.365253+00:00 heroku[router]: at=info method=GET path="/static/js/main.chunk.js.map" host=smart-brain-nga.herokuapp.com request_id=983d8c93-d0a8-4a35-baf3-104939101d47 fwd="89.139.245.238" dyno=web.1 connect=1ms service=2ms status=304 bytes=174 protocol=https
+2020-03-14T22:05:19.374151+00:00 heroku[router]: at=info method=GET path="/static/js/0.chunk.js.map" host=smart-brain-nga.herokuapp.com request_id=de17b4a9-a59e-47ef-bec7-b10b29761b69 fwd="89.139.245.238" dyno=web.1 connect=0ms service=8ms status=304 bytes=176 protocol=https
+2020-03-14T22:05:19.824661+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=smart-brain-nga.herokuapp.com request_id=ca069cb1-8e88-4a86-a842-5129e45643fc fwd="89.139.245.238" dyno=web.1 connect=0ms service=4ms status=200 bytes=3808 protocol=https
+2020-03-14T22:05:20.348835+00:00 heroku[router]: at=info method=GET path="/manifest.json" host=smart-brain-nga.herokuapp.com request_id=f73d0db7-f4ab-4ae5-8c9a-e50c019b9610 fwd="89.139.245.238" dyno=web.1 connect=1ms service=2ms status=304 bytes=237 protocol=https
+2020-03-14T22:06:14.721934+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/sockjs-node" host=smart-brain-nga.herokuapp.com request_id=a0b94ce3-9f5f-4211-b046-508227ba4274 fwd="89.139.245.238" dyno=web.1 connect=0ms service=55008ms status=503 bytes= protocol=https
