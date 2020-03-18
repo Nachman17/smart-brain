@@ -23,15 +23,22 @@ class Register extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    fetch('https://floating-caverns-56347.herokuapp.com/register', {
+
+    const options = { 
       method: 'post',
-      headers: {'Content-Type': 'application/json'},
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify({
         email: this.state.email,
         password: this.state.password,
         name: this.state.name
       })
-    })
+    
+    }    
+
+    fetch('https://floating-caverns-56347.herokuapp.com/register',options)
       .then(response => response.json())
       .then(user => {
         if (user.id) {
